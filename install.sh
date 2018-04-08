@@ -227,6 +227,9 @@ for file in .*; do
   echo -en '\tlinked';ok
 done
 
+bot "creating symlinks for notebook..."
+ln -s ~/Dropbox/Notebook ~/Notebook
+
 popd > /dev/null 2>&1
 
 
@@ -589,7 +592,7 @@ defaults -currentHost write NSGlobalDomain com.apple.trackpad.trackpadCornerClic
 defaults -currentHost write NSGlobalDomain com.apple.trackpad.enableSecondaryClick -bool true;ok
 
 running "Disable 'natural' (Lion-style) scrolling"
-defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false;ok
+defaults write NSGlobalDomain com.apple.swipescrolldirection -bool true;ok
 
 running "Increase sound quality for Bluetooth headphones/headsets"
 defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40;ok

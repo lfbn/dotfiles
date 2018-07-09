@@ -2,6 +2,9 @@
 export PATH=$PATH:.
 #export PATH=$PATH:~/.dotfiles/scripts
 
+#PHP
+export PATH=~/.composer/vendor/bin:$PATH
+
 #Brew
 export PATH=/usr/local/sbin:$PATH
 export PATH=/usr/local/bin:$PATH
